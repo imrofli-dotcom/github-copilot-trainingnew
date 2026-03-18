@@ -25,3 +25,7 @@ build-backend = "hatchling.build"
 
 [tool.uv]
 default-groups = ["dev"] # Ensures dev group is installed by default during uv sync
+
+[tool.mypy]
+ignore_missing_imports = true
+disable_error_code = ["misc", "untyped-decorator"]
